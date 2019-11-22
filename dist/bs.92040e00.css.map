@@ -1,0 +1,1 @@
+{"version":3,"sources":["bs.styl"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"bs.92040e00.css","sourceRoot":"..","sourcesContent":["html,\nbody {\n  margin: 0;\n}\nbody {\n  background: url(\"348a87abc5f0870ed4d0e6085fd032fb.png\");\n  background-size: cover;\n}\n"]}
