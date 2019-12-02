@@ -1,0 +1,76 @@
+greno = #4DDF0C
+
+@font-face 
+  font-family dd
+  src url("fonts/dd.eot")
+  src url("fonts/dd.woff2")
+@font-face 
+  font-family inter  
+  src url("fonts/inter.woff2")
+
+body
+    background black    
+.hero
+    width 100vw
+    height 100vh
+    background url("img/hero.jpg")
+    background-position center
+    background-size 100%
+    position relative
+    .wrap
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        width 90vw
+        height 90vh              
+        display flex
+        flex-direction column
+        justify-content space-between
+        .toptext
+            width 100%
+            display flex        
+            justify-content space-between            
+        .bottext
+            text-align center
+            width 100%
+        p
+            font-family dd
+            color white
+            text-transform uppercase
+            font-size 21px
+
+.content
+    width 70vw
+    margin 0 auto
+    padding-top 5vw
+    .title
+        margin-bottom 3vw        
+        p
+            color greno
+            font-family dd
+            text-transform uppercase
+            text-align center
+            font-size 72px
+            margin-top 10px
+    .desc
+        width 100%
+        margin-bottom 12vw
+        p
+            color white
+            font-family inter
+            font-size 32px
+            line-height 48px
+            text-align center
+
+footer 
+    margin-top 15vw    
+    height 20vw
+    border-bottom 6px solid greno
+    .bs
+        position absolute        
+        left 50%
+        width 50vw                
+        transform rotate(10deg) translateX(-50%)
+    
+    
