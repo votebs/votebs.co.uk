@@ -73,6 +73,42 @@ footer .bs {
   transform: rotate(10deg) translateX(-50%);
 }
 @media screen and (min-width: 501px) {
+  .floater {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 130px;
+  }
+  .highlight {
+    left: 130px;
+    background: url("highlight.890ce178.png");
+    z-index: 2;
+    background-size: cover;
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .download {
+    left: 150px;
+    z-index: 3;
+    color: #fff;
+    font-family: dd;
+    transform: translate(0, 60px) rotate(-5deg);
+    text-align: center;
+    width: 170px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .download:hover ~ .highlight {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .download a {
+    color: #fff;
+  }
   .hero {
     background: url("hero.3ad8264a.jpg");
     background-position: center;
@@ -97,7 +133,30 @@ footer .bs {
   }
 }
 @media screen and (max-width: 500px) {
+  .floater {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+  }
+  .highlight {
+    background: #4ddf0c;
+    z-index: 2;
+  }
+  .download {
+    z-index: 3;
+    font-family: dd;
+    text-align: center;
+  }
+  .download a {
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+  }
   .hero {
+    margin-top: 30px;
     background: url("hero.3ad8264a.jpg");
     background-position: cover;
     background-size: 100%;
@@ -118,6 +177,38 @@ footer .bs {
   }
   footer .bs {
     width: 80vw;
+  }
+}
+@-moz-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
